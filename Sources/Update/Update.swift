@@ -3,7 +3,7 @@ import Foundation
 public struct Update {
     public private(set) var text = "Hello, World!"
     private var updateInfo: UpdateInfo?
-    private var showAlert = false
+    internal(set) var showAlert = false
     private var mandatoryUpdate = false
     private(set) var latestVersion = ""
     var currentVersion: String = Bundle.main.currentVersion
