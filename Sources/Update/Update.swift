@@ -4,7 +4,7 @@ public struct Update {
     public private(set) var text = "Hello, World!"
     private var updateInfo: UpdateInfo?
     public private(set) var showAlert = false
-    private var mandatoryUpdate = false
+    public private(set) var mandatoryUpdate = false
     public private(set) var latestVersion = ""
     var currentVersion: String = Bundle.main.currentVersion
 
